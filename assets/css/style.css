@@ -66,4 +66,26 @@ header nav li a {
     font-size: 20px;
 }
 
-
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.contact-me h2 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-right: 2px black solid;
+    text-align: right;
+    height: 150px;
+    padding-right: 10px;
+    padding-left: 107px;
+    padding-top: 10px;
+}
+.contact-me a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: black;
+    
+}
