@@ -49,8 +49,14 @@ header nav li a:hover {
     background-position: cover;
     position: relative;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    min-height: 30vh;
+    
 }
+.flex-it {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto
+    
+} 
 .text-block {
     position: absolute;
     bottom: 20px;
@@ -60,11 +66,6 @@ header nav li a:hover {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 35px;
-}
-.flex-it {
-    max-width: 88%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .about-me {
@@ -92,7 +93,6 @@ header nav li a:hover {
 }
 .work-flex {
     display: flex;
-    
     justify-content: flex-start;
 }
 .work-flex h2 {
@@ -214,8 +214,65 @@ header nav li a:hover {
 }
 @media screen and (max-width: 980px) {
 
+
+header {
+    justify-content: center;
+    position: relative;
 }
-@media screen and (max-width: 768px) {
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+header nav ul li a {
+    font-size: 20px;
+}
+.about-me {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about-me h2 {
+    font-size: 30px;
+    border: none;
+    height: 80px;
+}
+.about-me p {
+    width: 100%;
+}
+.work-flex {
+    justify-content:center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
 
 }
-@media screen and (max-width: 575px)
+.work-flex h2 {
+    height: 60px;
+    border: none;
+}
+
+.contact-me {
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+}
+@media screen and (max-width: 768px) {
+.work-flex {
+    padding-top: 250px;
+}
+.contact-me {
+    padding-left: 50px;
+}
+
+}
+@media screen and (max-width: 575px) {
+.about-me {
+    margin: auto;
+}
+}
+
